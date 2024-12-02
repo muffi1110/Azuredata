@@ -114,6 +114,6 @@ variable "adlgstg_name" {
   description = "ADF Stg name"
 }
 
-variable "sql_connection_string" {
-  type = string
-}
+# variable "sql_connection_string" {
+#   type = string
+# }

@@ -124,7 +124,7 @@ module "AzureDataFactory" {
   private_subnet_az1 = var.private_subnet_az1
   vnet_name = var.vnet_name
   local_key_vault_name = module.local.key_vault_name
-  sql_connection_string = var.sql_connection_string
+  #sql_connection_string = var.sql_connection_string
 
   depends_on = [ module.resource_group, module.vnet, module.azuredatalakeGen, module.local ]
 }
