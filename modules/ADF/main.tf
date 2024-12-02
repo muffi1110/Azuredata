@@ -19,14 +19,14 @@ resource "azurerm_key_vault" "azakv" {
   }
 }
 
-# Key Vault Secret for SQL Server Connection String
-resource "azurerm_key_vault_secret" "sql_connection_string" {
-  name         = "sql-server-connection-string"
-  value        = var.sql_connection_string
-  key_vault_id = azurerm_key_vault.azakv.id
+# # Key Vault Secret for SQL Server Connection String
+# resource "azurerm_key_vault_secret" "sql_connection_string" {
+#   name         = "sql-server-connection-string"
+#   value        = ""
+#   key_vault_id = azurerm_key_vault.azakv.id
 
-  depends_on = [ azurerm_key_vault.azakv ]
-}
+#   depends_on = [ azurerm_key_vault.azakv ]
+# }
 
 
 ###################################################3

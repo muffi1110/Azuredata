@@ -41,7 +41,7 @@ variable "local_key_vault_name" {
   description = "local key vault name"
 }
 
-variable "sql_connection_string" {
-  type = string
-}
+# variable "sql_connection_string" {
+#   type = string
+# }
 
